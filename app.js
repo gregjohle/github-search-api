@@ -10,6 +10,7 @@ function getRepos(username) {
         .then(responseJson => handleResults(responseJson))
 };
 
+// moves results into a list
 function handleResults(responseJson) {
     console.log(responseJson);
     for (let i = 0; i < responseJson.length; i++) {
