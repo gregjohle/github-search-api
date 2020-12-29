@@ -11,7 +11,18 @@
 </head>
 
 <body>
+    <h1>Search Github by User Handle</h1>
+    <form id="githubSearch">
+        <label for="githubHandle">Enter a Github User Handle</label>
+        <input type="text" id="githubHandle" required>
+        <button type="submit" for="githubHandle" id="githubSubmit">Submit</button>
+    </form>
 
+    <section class="results hidden">
+        <ul class="js-results">
+
+        </ul>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
